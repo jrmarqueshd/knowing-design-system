@@ -1,11 +1,5 @@
 {
-  "extends": [
-    "next",
-    "prettier",
-    "plugin:react/recommended",
-    "plugin:react/jsx-runtime",
-    "airbnb"
-  ],
+  "extends": ["next", "prettier", "plugin:react/jsx-runtime", "airbnb"],
   "settings": {
     "next": {
       "rootDir": "src"
@@ -29,6 +23,15 @@
     "react/jsx-filename-extension": [
       2,
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "import/extensions": [
+      "always",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
     ],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
