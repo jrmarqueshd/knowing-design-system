@@ -1,10 +1,16 @@
 import Head from 'next/head';
+import { useEffect } from 'react';
+import globalStyles from 'styles/global';
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    globalStyles();
+  }, []);
+
   return (
     <>
       <Head>
-        <title>Gift Store - Find a gift for your wife or girlfriend.</title>
+        <title>Stitches is awesome</title>
       </Head>
       <Component {...pageProps} />
     </>
