@@ -6,5 +6,5 @@ type Icons = keyof typeof iconsMap;
 
 export interface IconProps {
   color: `$${Color}`;
-  icon: Icons;
+  name: Icons;
 }

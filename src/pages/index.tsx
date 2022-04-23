@@ -13,7 +13,7 @@ export default function Home() {
         blanditiis debitis quod!
       </Text>
 
-      <Icon icon="AddressBook" color="$infoMain" />
+      <Icon name="AddressBook" color="$infoMain" />
     </>
   );
 }
