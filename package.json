@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node iconMap.js && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "mapIcons": "node iconMap.js"
   },
   "dependencies": {
     "@stitches/react": "^1.2.7",
+    "@svgr/webpack": "^6.2.1",
+    "list-files": "^1.1.4",
     "next": "12.1.3",
     "react": "18.0.0",
     "react-dom": "18.0.0"

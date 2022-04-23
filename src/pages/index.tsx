@@ -1,3 +1,4 @@
+import Icon from 'components/Icon';
 import { Text, Heading } from 'styles/typograph';
 
 export default function Home() {
@@ -11,6 +12,8 @@ export default function Home() {
         deserunt placeat nobis a? Ipsa, repudiandae quos quasi adipisci
         blanditiis debitis quod!
       </Text>
+
+      <Icon icon="AddressBook" color="$infoMain" />
     </>
   );
 }
