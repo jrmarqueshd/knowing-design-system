@@ -3,6 +3,7 @@ import { textWeights } from './utils';
 
 export const Heading = styled('h1', {
   color: '$neutral100',
+  fontFamily: 'inherit',
 
   variants: {
     size: {
@@ -31,21 +32,36 @@ export const Heading = styled('h1', {
 });
 
 export const Text = styled('p', {
-  color: '$neutral100',
+  fontFamily: 'inherit',
 
   variants: {
     size: {
       12: {
         fontSize: '12px',
         lineHeight: '16px',
+
+        '& > *': {
+          fontSize: '12px',
+          lineHeight: '16px',
+        },
       },
       14: {
         fontSize: '14px',
         lineHeight: '20px',
+
+        '& > *': {
+          fontSize: '14px',
+          lineHeight: '20px',
+        },
       },
       16: {
         fontSize: '16px',
         lineHeight: '24px',
+
+        '& > *': {
+          fontSize: '16px',
+          lineHeight: '24px',
+        },
       },
     },
     weight: {

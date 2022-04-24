@@ -2,15 +2,15 @@ import { globalCss } from './theme';
 
 const globalStyles = globalCss({
   '*': {
-    margin: 0,
-    padding: 0,
+    margin: '0px',
+    padding: '0px',
     boxSizing: 'border-box',
   },
   'html, body, #__next': {
-    minHeight: '100vh',
+    minHeight: '100vh !important',
   },
   body: {
-    fontFamily: '$inter',
+    fontFamily: '$inter !important',
   },
 });
 

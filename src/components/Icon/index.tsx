@@ -1,9 +1,9 @@
 import dynamic from 'next/dynamic';
-import { IconProps } from './interfaces';
+import { IconFC } from './interfaces';
 
 import { IconComponent } from './styles';
 
-export default function Icon({ name, color }: IconProps) {
+const Icon: IconFC = ({ name, color }) => {
   const Component = dynamic(() => import(`icons/${name}.svg`));
 
   return (
@@ -12,9 +12,15 @@ export default function Icon({ name, color }: IconProps) {
       as={Component}
       css={{
         '& path': {
+          fill: 'transparent',
           stroke: color,
+        },
+        '& path:first-child': {
+          stroke: 'transparent',
         },
       }}
     />
   );
-}
+};
+
+export default Icon;
