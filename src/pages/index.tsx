@@ -1,7 +1,8 @@
 import Accordion from 'components/Accordion';
+import Button from 'components/Button';
 import Icon from 'components/Icon';
 import Tag from 'components/Tag';
-import { Grid, Separator } from 'styles/layout';
+import { Flex, Grid, Separator } from 'styles/layout';
 import { styled } from 'styles/theme';
 import { Text, Heading } from 'styles/typograph';
 
@@ -25,16 +26,18 @@ export default function Home() {
 
       <Separator />
 
-      <Tag label="Tag" type="danger" icon="ChatCircle" />
-      <Tag label="Tag" type="disabled" />
-      <Tag label="Tag" type="info" icon="ChatCircle" />
-      <Tag label="Tag" type="primary" icon="ChatCircle" />
-      <Tag label="Tag" type="success" icon="ChatCircle" />
-      <Tag label="Tag" type="warning" icon="ChatCircle" />
+      <Flex>
+        <Tag label="Tag" type="danger" icon="ChatCircle" />
+        <Tag label="Tag" type="disabled" />
+        <Tag label="Tag" type="info" icon="ChatCircle" />
+        <Tag label="Tag" type="primary" icon="ChatCircle" />
+        <Tag label="Tag" type="success" icon="ChatCircle" />
+        <Tag label="Tag" type="warning" icon="ChatCircle" />
+      </Flex>
 
       <Separator />
 
-      <Grid columns={3}>
+      <Grid columns={4}>
         <Accordion
           items={[
             {
@@ -60,6 +63,70 @@ export default function Home() {
           ]}
         />
       </Grid>
+
+      <Separator />
+
+      <Flex>
+        <Button format="primary" icon="CircleWavyCheck">
+          Button
+        </Button>
+        <Button format="primary">Button</Button>
+        <Button format="primary" icon="CircleWavyCheck" />
+      </Flex>
+
+      <Separator />
+
+      <Flex>
+        <Button format="secondary" icon="CircleWavyCheck">
+          Button
+        </Button>
+        <Button format="secondary">Button</Button>
+        <Button format="secondary" icon="CircleWavyCheck" />
+      </Flex>
+
+      <Separator />
+
+      <Flex>
+        <Button format="outline" icon="CircleWavyCheck">
+          Button
+        </Button>
+        <Button format="outline">Button</Button>
+        <Button format="outline" icon="CircleWavyCheck" />
+      </Flex>
+
+      <Separator />
+
+      <Flex>
+        <Button format="text" icon="CircleWavyCheck">
+          Button
+        </Button>
+        <Button format="text">Button</Button>
+        <Button format="text" icon="CircleWavyCheck" />
+      </Flex>
+
+      <Separator />
+
+      <Flex>
+        <Button format="primary" icon="CircleWavyCheck" disabled>
+          Button
+        </Button>
+        <Button format="primary" disabled>
+          Button
+        </Button>
+        <Button format="primary" icon="CircleWavyCheck" disabled />
+      </Flex>
+
+      <Separator />
+
+      <Flex>
+        <Button format="text" icon="CircleWavyCheck" disabled>
+          Button
+        </Button>
+        <Button format="text" disabled>
+          Button
+        </Button>
+        <Button format="text" icon="CircleWavyCheck" disabled />{' '}
+      </Flex>
     </>
   );
 }

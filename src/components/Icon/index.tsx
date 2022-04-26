@@ -12,11 +12,11 @@ const Icon: IconFC = ({ name, color }) => {
       as={Component}
       css={{
         '& path': {
-          fill: 'transparent',
+          fill: 'transparent !important',
           stroke: color,
         },
         '& path:first-child': {
-          stroke: 'transparent',
+          stroke: 'transparent !important',
         },
       }}
     />

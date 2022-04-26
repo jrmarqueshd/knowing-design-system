@@ -12,6 +12,9 @@ const globalStyles = globalCss({
   body: {
     fontFamily: '$inter !important',
   },
+  button: {
+    fontFamily: 'inherit',
+  },
 });
 
 export default globalStyles;
